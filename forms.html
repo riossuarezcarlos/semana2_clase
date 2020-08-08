@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Forms</h1>
+    </header>
+    <main>
+        <section>
+            <!-- Aquí adentro vamos a crear el formulario de registro de un alumno -->
+            <form action="">
+                <P>Por favor llenar toda la información solicitada</P>
+                <fieldset>
+                    <legend>Datos obligatorios</legend>
+                    <label for="nombre">Nombres Completos:</label>
+                    <input type="text" id="nombre" placeholder="Ingresa tus nombres completos"> 
+                    <br />
+                    <label for="apellidos">Apellidos Completos</label>
+                    <input type="text" id="apellidos" placeholder="Ingrese sus Apellidos">
+                    <br />
+                    <label for="enaik">Email</label>
+                    <input type="email" id="email" placeholder="Ingrese su Email">
+                    <br />
+                    <label for="pwd">password</label>
+                    <input type="password" id="pwd" placeholder="Ingrese su Password">
+                    <br />
+                    <label for="edad">Edad</label>
+                    <input type="number" id="edad" placeholder="Ingrese su Edad">
+                    <!-- Fin de obligatorios -->
+                </fieldset>
+                <br />
+                <fieldset>
+                    <legend>Datos adicionales</legend>
+                    <label for="tel">Telefono</label>
+                    <input type="text" id="tel" placeholder="Ej-00-02351212">
+                    <br />
+                    <label for="cel">Celular</label>
+                    <input type="number" id="cel" placeholder="96585223">
+                    <br />
+                    <label for="gen">Telefono</label>
+                    <input name="gen" type="radio" id="gen" value="M">Masculino<br />
+                    <input name="gen" type="radio" id="gen" value="F">Femenino<br />
+                    <input name="gen" type="radio" id="gen" value="X">Prefiero no compartir<br />
+                    <!--  -->
+                    <label for="departamento">ELija su Ciudad</label>
+                    <select name="" id="">
+                        <option value="">Elija una Ciudad</option>
+                        <option value="AR">Arequipa</option>
+                        <option value="CU">Cuzco</option>
+                        <option value="LM">Lima</option>
+                        <option value="PI">Piura</option>
+                        <option value="TR">Trujillo</option>
+                    </select> 
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Datos para evaluaciòn psicològica</legend>
+                    <label>Hobbies</label>
+                    <br /> 
+                    <label for="motear">Motear</label>
+                    <input type="checkbox" value="autos" id="motear">
+                    <label for="futbol">Futbol</label>
+                    <input type="checkbox" value="futbol" id="futbol">
+                    <label for="cocinar">Cocinar</label>
+                    <input type="checkbox" value="cocinar" id="cocinar">
+                    <label for="netflix">Netflix</label>
+                    <input type="checkbox" value="netflix" id="netflix"> 
+                    <br />
+
+                    <label for="">Color Favorito</label>
+                    <input type="color">
+                    <br />
+                    <label for="">Descripciòn</label>
+                    <textarea placeholder="Describete en 140 caracteres" cols="50" rows="15" ></textarea>
+
+                </fieldset>
+                <br />
+                <input type="submit" value="Enviar">
+                <button type="reset">Limpiar Formulario</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
